@@ -34,27 +34,33 @@
           <ul class="nav-links" id="nav-links">
             <!-- single link -->
             <li>
-              <a href="#home" class="nav-link scroll-link">home</a>
+              <a href="index.html" class="nav-link scroll-link">home</a>
             </li>
             <!-- end of single link -->
             <!-- single link -->
             <li>
-              <a href="#about" class="nav-link scroll-link">about</a>
+              <a href="somos.html" class="nav-link scroll-link">Quem Somos</a>
             </li>
             <!-- end of single link -->
             <!-- single link -->
             <li>
-              <a href="#services" class="nav-link scroll-link">services</a>
+              <a href="unidades.html" class="nav-link scroll-link">Unidades</a>
             </li>
             <!-- end of single link -->
             <!-- single link -->
             <li>
-              <a href="#featured" class="nav-link scroll-link">featured</a>
+              <a href="loja.html" class="nav-link scroll-link">Loja</a>
             </li>
             <!-- end of single link -->
             <!-- single link -->
             <li>
-              <a href="#gallery" class="nav-link scroll-link">gallery</a>
+              <a href="projetos.html" class="nav-link scroll-link">Projetos</a>
+            </li>
+            <li>
+              <a href="blog.html" class="nav-link scroll-link">Blog</a>
+            </li>
+             <li>
+              <a href="franqueado.html" class="nav-link scroll-link">Seja um Franqueado</a>
             </li>
             <!-- end of single link -->
           </ul>
@@ -79,7 +85,7 @@
                 target="_blank"
                 class="nav-icon"
               >
-                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
               </a>
             </li>
             <!-- end of single icon -->
@@ -90,7 +96,7 @@
                 target="_blank"
                 class="nav-icon"
               >
-                <i class="fab fa-squarespace"></i>
+                <i class="fab fa-linkedin"></i>
               </a>
             </li>
             <!-- end of single icon -->
@@ -102,10 +108,10 @@
       <div class="hero">
         <div class="hero-banner">
           <h1>BrSol Energia Solar</h1>
-          <p>Milhões de brasileiros irão instalar a energia solar nos próximos anos e esse mercado não para de crescer. </p>
-          <p>Aqui na BrSol, iremos te dar todo o apoio para você se tornar uma referência nesse segmento.</p>
+          <p>Seja um franqueado no mercado que mais cresce no Brasil. Temos a estrutura certa para começar seu negócio formatado e pronto para vender</p>
+         
           
-          <a href="#featured" class="btn hero-btn scroll-link">Quero ser franqueado</a>
+          <a href="#featured" class="btn hero-btn scroll-link" id="btn-hero">Quero ser franqueado</a>
         </div>
       </div>
     </header>
@@ -115,7 +121,7 @@
     <section class="section" id="about">
       <!-- section-title -->
       <div class="section-title">
-        <h2>Nossas Unidades </h2>
+        <h2 id="unidades-title">Nossas Unidades </h2>
       </div>
       <!-- end of section-title -->
       <div class="section-center about-center">
@@ -128,24 +134,26 @@
           />
         </article>
         <!-- about info -->
-        <article class="about-info">
+        <article class="about-info unidades-info">
           <h3>Faça parte dessa transformação</h3>
-          <p>
-            Já somos mais de trinta franqueados levando energia solar e muita sustentabilidade para todos os lugares do país
-          </p>
-          <p>
-           Venha fazer parte desse mercado com crescimento exponencial com a solidez da BrSol Energia Solar
-          </p>
-          <a href="#" class="btn"> Encontre a BrSol mais próxima</a>
+          <div class="unidades-paragrafo">
+            <p>
+              Nossa rede de franqueados não para de crescer.
+            </p>
+            <p>
+              Já somos mais de trinta unidades levando energia solar e sustentabilidade para todos os lugares do país.
+            </p>
+          </div>
+          <a href="#" class="btn" id="unidades-btn"> Encontre a BrSol mais próxima</a>
         </article>
       </div>
     </section>
     <!-- end of about section -->
 
     <!-- services -->
-    <section class="section services" id="services">
+    <section class="section services vantagens" id="services">
       <!-- section-title -->
-      <div class="section-title">
+      <div class="section-title services-h2">
         <h2>Vantagens de nossa franquia  <span></span></h2>
       </div>
       <!-- end of section-title -->
@@ -158,7 +166,7 @@
           <div class="service-info">
             <h4 class="service-title">Payback de 6 a 12 meses</h4>
             <p class="service-text">
-             Payback de 6 a 12 meses
+             Nosso negócio já está formatado e testado. Você irá recuperar rapidamente o investimento e lucrar no primeiro ano.  
             </p>
           </div>
         </article>
@@ -171,8 +179,7 @@
           <div class="service-info">
             <h4 class="service-title">Capacitação e Treinamento</h4>
             <p class="service-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-              cupiditate, tempore reiciendis sit ipsum consequatur!
+             A equipe da BrSol possui vários anos de experiência no mercado de energia solar. Com nossos conhecimentos, você irá se estabelecer rapidamente.
             </p>
           </div>
         </article>
@@ -185,14 +192,13 @@
           <div class="service-info">
             <h4 class="service-title">Suporte Operacional</h4>
             <p class="service-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-              cupiditate, tempore reiciendis sit ipsum consequatur!
+              Somos uma grande equipe de franqueados. A BrSol fornece suporte constante na parte técnica, jurídica e marketing. 
             </p>
           </div>
         </article>
         <!-- enf of single service -->
       </div>
-      <a href="#featured" class="btn hero-btn scroll-link">Quero ser franqueado</a>
+      <a href="#featured" id="btn-vantagens" class="btn hero-btn scroll-link">Quero ser franqueado</a>
 
     </section>
     <!-- end of services -->
@@ -209,7 +215,7 @@
         <!-- single tour -->
         <article class="tour-card">
           <div class="tour-img-container">
-            <img src="./images/tour-1.jpeg" class="tour-img" alt="" />
+            <img src="./images/residencial.jpg" class="tour-img" alt="" />
           </div>
           <!-- tour info -->
           <div class="tour-info">
@@ -234,19 +240,8 @@
         <!-- single tour -->
         <article class="tour-card">
           <div class="tour-img-container">
-            <img src="./images/rural.jpg" class="tour-img" alt="" />
+            <img src="./images/rural-dois.jpg" class="tour-img" alt="" />
             
-          </div>
-          <!-- tour info -->
-          <div class="tour-info">
-            <h4>Industrial</h4>
-          </div>
-        </article>
-        <!-- end of single tour -->
-        <!-- single tour -->
-        <article class="tour-card">
-          <div class="tour-img-container">
-            <img src="./images/rural.jpg" class="tour-img" alt="" />
           </div>
           <!-- tour info -->
           <div class="tour-info">
@@ -257,7 +252,18 @@
         <!-- single tour -->
         <article class="tour-card">
           <div class="tour-img-container">
-            <img src="./images/tour-4.jpeg" class="tour-img" alt="" />
+            <img src="./images/industria.jpg" class="tour-img" alt="" />
+          </div>
+          <!-- tour info -->
+          <div class="tour-info">
+            <h4>Industrial</h4>
+          </div>
+        </article>
+        <!-- end of single tour -->
+        <!-- single tour -->
+        <article class="tour-card">
+          <div class="tour-img-container">
+            <img src="./images/usina.jpg" class="tour-img" alt="" />
           </div>
           <!-- tour info -->
           <div class="tour-info">
@@ -267,19 +273,19 @@
         <!-- end of single tour -->
       </div>
       <div class="tour-btn">
-        <a href="#" class="btn">saiba mais</a>
+        <a href="#" id="tour-btn" class="btn">saiba mais</a>
       </div>
     </section>
     <!-- end of featured tours -->
 
     <!-- about section -->
-    <section class="section" id="about">
+    <section class="section como-funciona" id="about">
       <!-- section-title -->
       <div class="section-title">
         <h2>Como funciona a energia solar? </h2>
       </div>
       <!-- end of section-title -->
-      <div class="section-center about-center">
+      <div class="section-center about-center" id="video">
         <!-- about img wrapper -->
        
           <video width="80%" controls>
@@ -292,19 +298,115 @@
     <!-- end of about section -->
 
     <!-- about section -->
-    <section class="section" id="formulario">
-      <!-- section-title -->
-      <div class="section-title">
-        <h2>Contato</h2>
-      </div>
-      <!-- end of section-title -->
-      <div class="section-center about-center">
-        <!-- about img wrapper -->
-       
-        <!-- about info -->
+    <section id="formulario">
+      <div id="contato" class="section-center">
+         <article class="artigo-contato">
+          <!-- contact item -->
+          <div class="matriz">
+          <div class="">
+            <!-- contact text -->
+            <h2 class="">Matriz/Franqueadora</h2>
+          <h3 class="">
+              <span class="formulario-span">
+                <i class="fa-solid fa-location-dot"></i>
+              Rua Camargo Pimentel, 392, <br> Jardim Guanabara, Campinas - SP
+            </h3>
+          
+          <!-- end of contact item -->
+          <!-- contact item -->
+          <div class="">
+            <!-- contact text -->
+            <h3 class="contact-title">
+              <span class="contact-icon"> <i class="fas fa-envelope"></i> </span>
+              contato@brsol.com.br
+            </h3>
+          </div>
+          <!-- end of contact item -->
+          <!-- contact item -->
+          <div class="">
+            <!-- contact text -->
+            <h3 class="">
+              <span class="formulario-span">
+                <i class="fa-solid fa-phone"></i></i> </span>
+              (19) 3241-4191 / (19) 99763-4355
+            </h3>
+            <h3 class="cnpj">CNPJ: 40.851.570/0001-00</h3>
+          </div>
+          </div>
+          <div class="matriz">  
+            <h2 class="">
+              Escritorio
+            </h2>
+            <h3 class="">
+              <span class="formulario-span">
+                <i class="fa-solid fa-location-dot"></i>
+              Avenida Embaixador Abelardo Bueno, 01 <br> Barra da Tijuca, Rio de Janeiro - RJ
+            </h3>
+          
+          <!-- end of contact item -->
+          <!-- contact item -->
+          <div class="">
+            <!-- contact text -->
+            <h3 class="contact-title">
+              <span class="contact-icon"> <i class="fas fa-envelope"></i> </span>
+              contato@brsol.com.br
+            </h3>
+          </div>
+          <!-- end of contact item -->
+          <!-- contact item -->
+          <div class="">
+            <!-- contact text -->
+            <h3 class="">
+              <span class="formulario-span">
+                <i class="fa-solid fa-phone"></i></i> </span>
+              (21) 3215-5156 
+            </h3>
+            <h3 class="">CNPJ: 36.346.602/0001-42</h3>
+          </div>
+            
+          <!-- end of contact item -->
+          </div>
+        </article>
+        
+      <article id="artigo-formulario">
+        <h3>Fale Conosco</h3>
+          <form
+            action="https://formspree.io/learncodetutorial@gmail.com"
+            method="POST"
+            id="info-formulario"
+          >
+            <input
+              type="text"
+              name="name"
+              placeholder="nome"
+              class="form-input"
+            />
+            <input
+              type="text"
+              name="email"
+              placeholder="email"
+              class="form-input"
+            />
+            <input
+              type="text"
+              name="telefone"
+              placeholder="telefone"
+              class="form-input"
+            />
+            <textarea
+              name="mensagem"
+              placeholder="mensagem"
+              class="form-input"
+              rows="5"
+            ></textarea>
+            <button class="form-btn">Enviar</button>
+          </form>
+        </article>
       </div>
     </section>
     <!-- end of about section -->
+
+
 
   
 
@@ -319,22 +421,28 @@
         <!-- end of single link -->
         <!-- single link -->
         <li>
-          <a href="#about" class="footer-link scroll-link">about</a>
+          <a href="#about" class="footer-link scroll-link">quem somos</a>
         </li>
         <!-- end of single link -->
         <!-- single link -->
         <li>
-          <a href="#services" class="footer-link scroll-link">services</a>
+          <a href="#services" class="footer-link scroll-link">unidades</a>
         </li>
         <!-- end of single link -->
         <!-- single link -->
         <li>
-          <a href="#featured" class="footer-link scroll-link">featured</a>
+          <a href="#featured" class="footer-link scroll-link">loja</a>
         </li>
         <!-- end of single link -->
         <!-- single link -->
         <li>
-          <a href="#gallery" class="footer-link scroll-link">gallery</a>
+          <a href="#gallery" class="footer-link scroll-link">projetos</a>
+        </li>
+         <li>
+          <a href="#gallery" class="footer-link scroll-link">blog</a>
+        </li>
+         <li>
+          <a href="#gallery" class="footer-link scroll-link">seja um franqueado</a>
         </li>
         <!-- end of single link -->
       </ul>
@@ -351,22 +459,22 @@
         <!-- single icon -->
         <li>
           <a href="https://www.twitter.com" target="_blank" class="footer-icon">
-            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
           </a>
         </li>
         <!-- end of single icon -->
         <!-- single icon -->
         <li>
           <a href="https://www.twitter.com" target="_blank" class="footer-icon">
-            <i class="fab fa-squarespace"></i>
+            <i class="fab fa-linkedin"></i>
           </a>
         </li>
         <!-- end of single icon -->
       </ul>
       <!-- end of footer icons -->
       <p class="copyright">
-        copyright &copy; backroads travel tour company <span id="date"></span>.
-        all rights reserved
+        copyright &copy; BrSol Energial Solar. <span id="date"></span>.
+        Todos os direitos reservados.
       </p>
     </footer>
     <!-- js -->
