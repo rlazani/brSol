@@ -173,14 +173,63 @@ p {
 Navbar
 ===============
 */
+
+#navbars {
+  background: var(--clr-amarelo);
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  color: var(--clr-white);
+  display: flex;
+  height: 3rem;
+}
+
+.navbars-in {
+  width: 40%;
+  /* border: white solid 1px; */
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbars-phone a {
+  display: flex;
+  /* border: green solid 1px; */
+  align-items: center;
+}
+
+.navbars-phone p {
+  margin: .1rem 0 0 1rem;
+  color: var(--clr-azul);
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.navbars-phone i {
+  color: var(--clr-azul);
+  font-size: 1.5rem;
+}
+
+.navbar-icon {
+  display: flex;
+}
+
+.navbar-icon i {
+  color: var(--clr-azul);
+}
+
 .navbar {
   position: fixed;
-  top: 0;
+  top: 3rem;
   left: 0;
   width: 100%;
   background: var(--clr-white);
   box-shadow: var(--dark-shadow);
   z-index: 2;
+  opacity: .95;
 }
 .nav-icons {
   display: none;
@@ -219,6 +268,7 @@ Navbar
   color: var(--clr-grey-1);
   cursor: pointer;
   font-size: 1rem;
+  margin-top: 1rem;
 }
 .nav-link:hover {
   color: var(--clr-primary-1);
@@ -230,10 +280,21 @@ Navbar
   height: 0;
   overflow: hidden;
   transition: var(--transition);
+  /* border: red 1px solid; */
+  margin-bottom: .8rem;
+ 
 }
 .show-links {
   height: 280px;
 }
+
+/* #franqueado-menu {
+ 
+  background-color: var(--clr-azul);
+  padding: .5rem 1rem;
+  border-radius: 3px;
+} */
+
 @media screen and (min-width: 992px) {
   /* hide toggle button */
   .navbar {
@@ -322,7 +383,7 @@ Hero
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background: linear-gradient(rgba(2, 41, 73, 0.89), rgba(0, 0, 0, 0.7)),
+    background: linear-gradient(rgba(2, 41, 73, 0.89), rgba(2, 41, 73, 0.89)),
       url("../images/slider-um.jpg") center/cover no-repeat;
     background-attachment: fixed;
   }
@@ -330,7 +391,6 @@ Hero
     padding: 0;
   }
   .hero-banner p {
-    
     font-size: 1.5rem;
     text-align: justify;
   }
@@ -340,9 +400,11 @@ Hero
 UNIDADES
 ===============
 */
-/* section add to globals */
-/* title add to globals */
-/* section center add to globals */
+
+.unidades-hw {
+  height: 80vh;
+}
+
 .about-img,
 .about-info {
   margin-bottom: 2rem;
@@ -396,7 +458,7 @@ Vantagens
 ===============
 */
 .services {
-   background: linear-gradient(rgba(2, 41, 73, 0.89), rgba(0, 0, 0, 0.7)),
+   background: linear-gradient(rgba(2, 41, 73, 0.89), rgba(2, 41, 73, 0.89)),
       url("../images/clientes.jpg") center/cover no-repeat;
    color:#fff;
    background-attachment: fixed;
@@ -567,9 +629,47 @@ Video
 }
 
 .como-funciona {
-  background-color: var(--clr-amarelo);
+  background-color: var(--clr-azul);
+  color: var(--clr-amarelo);
 }
 
+/*
+=============== 
+Vantagens
+===============
+*/
+
+.nossos-clientes {
+   background: linear-gradient(rgb(235, 158, 5, 0.89), rgb(235, 158, 5, 0.89)),
+      url("../images/homem-um.jpg") top/cover no-repeat;
+   color:#fff;
+   background-attachment: fixed;
+   height: 100vh;
+}
+
+.nossos-clientes p {
+  font-size: 1.2rem;
+  color: var(--clr-white);
+}
+
+.nossos-clientes h4 {
+  font-size: 1.5rem;
+  color: var(--clr-azul);
+}
+
+.clientes-h2 {
+  color: var(--clr-azul);
+}
+
+.nossos-clientes a {
+  display: block;
+  margin: 0 auto;
+  width: 25rem;
+}
+
+.service-icon img {
+  border-radius: 100%;
+}
 /*
 =============== 
 Formulario
@@ -577,7 +677,7 @@ Formulario
 */
 
 #formulario {
-    background: linear-gradient(rgba(2, 41, 73, 0.89), rgba(0, 0, 0, 0.7)),
+    background: linear-gradient(rgba(2, 41, 73, 0.89), rgba(2, 41, 73, 0.89)),
       url("../images/reuniao.jpg") center/cover no-repeat;
     height: 80vh;
     color: #fff;
@@ -651,7 +751,7 @@ Footer
 ===============
 */
 .footer {
-  background: var(--clr-grey-1);
+  background: var(--clr-amarelo);
   text-align: center;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -678,7 +778,7 @@ Footer
 .footer-icon {
   font-size: 2rem;
   margin-right: 1rem;
-  color: var(--clr-amarelo);
+  color: var(--clr-azul);
   transition: var(--transition);
 }
 .footer-icon:hover {
